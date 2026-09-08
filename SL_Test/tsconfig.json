@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    // Usa uma base moderna compatível com Node atual e Playwright.
+    "target": "ES2022",
+    // Os arquivos de teste e a configuração rodam no Node.
+    "module": "nodenext",
+    // Faz o TypeScript resolver imports com as regras modernas do Node.
+    "moduleResolution": "nodenext",
+    // Carrega os tipos globais do Node, como process e __dirname.
+    "types": ["node"],
+    // Melhora a interoperabilidade com pacotes CommonJS.
+    "esModuleInterop": true,
+    // Mantém a tipagem mais rigorosa no projeto.
+    "strict": true,
+    // Evita erros por diferenças de maiúsculas/minúsculas em nomes de arquivo.
+    "forceConsistentCasingInFileNames": true,
+    // Reduz ruído ao ignorar verificações profundas em declarações de bibliotecas.
+    "skipLibCheck": true,
+    // Ajuda quando você quiser importar JSON no futuro.
+    "resolveJsonModule": true
+  },
+  "include": ["playwright.config.ts", "tests/**/*.ts"]
+}
